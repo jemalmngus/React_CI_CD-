@@ -20,17 +20,17 @@ build:
 test_master_branch:
   stage: test
   image: node
-  only:
-    -master
   script:
     - echo "Testing App"
     - CI=true npm test
     - echo "Test successfully!"
+  only:
+    - master
 test_dev_branch:
   stage: test
   image: node
   only:
-    -dev
+   - dev
   script:
     - echo "Testing App"
     - CI=true npm test
