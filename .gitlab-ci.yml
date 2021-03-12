@@ -17,9 +17,29 @@ build:
       - build
       - node_modules/
 
-test:
+test master branch:
   stage: test
   image: node
+  only:
+    -master
+  script:
+    - echo "Testing App"
+    - CI=true npm test
+    - echo "Test successfully!"
+test dev branch:
+  stage: test
+  image: node
+  only:
+    -dev
+  script:
+    - echo "Testing App"
+    - CI=true npm test
+    - echo "Test successfully!"
+test feature branch:
+  stage: test
+  image: node
+  only:
+    - /^feature\/*/
   script:
     - echo "Testing App"
     - CI=true npm test
