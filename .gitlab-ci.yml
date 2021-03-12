@@ -39,7 +39,7 @@ test_feature_branch:
   stage: test
   image: node
   only:
-    - /^feature\/*/
+    - /^issue-.*$/
   script:
     - echo "Testing App"
     - CI=true npm test
