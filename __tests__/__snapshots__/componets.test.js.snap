@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a snapshot 1`] = `
+<div>
+  <ul>
+    <li>
+      <a
+        href="#"
+      >
+        Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="#"
+      >
+        News
+      </a>
+    </li>
+    <li>
+      <a
+        href="#"
+      >
+        Contact
+      </a>
+    </li>
+    <li
+      style={
+        Object {
+          "float": "right",
+        }
+      }
+    >
+      <a
+        href="#"
+        style={
+          Object {
+            "backgroundColor": "#4CAF50",
+          }
+        }
+      >
+        About
+      </a>
+    </li>
+  </ul>
+  <h2>
+    Hello Jemal
+  </h2>
+  <p>
+    This react demo 
+  </p>
+  <footer
+    style={
+      Object {
+        "backgroundColor": "#111",
+        "bottom": "0",
+        "color": "white",
+        "left": "0",
+        "position": "fixed",
+        "textAlign": "center",
+        "width": "100%",
+      }
+    }
+  >
+    <p>
+      Footer
+    </p>
+  </footer>
+</div>
+`;
